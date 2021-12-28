@@ -22,7 +22,7 @@ public class Board {
 
 			if ((values[i] == cell))
 				return false;
-		} // 1 - столбы и рядочки, 2 - диагональки
+		} // 1 - Г±ГІГ®Г«ГЎГ» ГЁ Г°ГїГ¤Г®Г·ГЄГЁ, 2 - Г¤ГЁГ ГЈГ®Г­Г Г«ГјГЄГЁ
 
 		int tempX = countOfQueens;
 		int tempY = cell;
@@ -45,12 +45,12 @@ public class Board {
 			}
 		}
 
-//		System.out.println("Текущие..");
+//		System.out.println("Г’ГҐГЄГіГ№ГЁГҐ..");
 		for (int i = 0; i < countOfQueens; i++) {
 //			System.out.println(i + ";" + values[i]);
 		}
 //		System.out.println("-----------------");
-//		System.out.println("Входной : " + (countOfQueens) + ";" + cell);
+//		System.out.println("Г‚ГµГ®Г¤Г­Г®Г© : " + (countOfQueens) + ";" + cell);
 
 		return true;
 	}
@@ -67,7 +67,7 @@ public class Board {
 			values[countOfQueens] = cell;
 			countOfQueens++;
 		} else {
-			System.out.println("Неправильный диапазон");
+			System.out.println("ГЌГҐГЇГ°Г ГўГЁГ«ГјГ­Г»Г© Г¤ГЁГ ГЇГ Г§Г®Г­");
 		}
 	}
 
