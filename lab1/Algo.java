@@ -25,11 +25,11 @@ public class Algo {
 //		System.out.println("LOOP");
 		if (board.isCorrect() == true) {
 
-			System.out.println("КОНЕЧНЫЙ РЕЗУЛЬТАТ");
+			System.out.println("ГЉГЋГЌГ…Г—ГЌГ›Г‰ ГђГ…Г‡Г“Г‹ГњГ’ГЂГ’");
 			System.out.println("---------------------------");
-			System.out.println("Итераций " + steps);
-			System.out.println("Безыхосдности " + noWay);
-			System.out.println("Состояний  " + states);
+			System.out.println("Г€ГІГҐГ°Г Г¶ГЁГ© " + steps);
+			System.out.println("ГЃГҐГ§Г»ГµГ®Г±Г¤Г­Г®Г±ГІГЁ " + noWay);
+			System.out.println("Г‘Г®Г±ГІГ®ГїГ­ГЁГ©  " + states);
 			System.out.println(board.collision);
 
 			return board;
@@ -96,7 +96,7 @@ public class Algo {
 		return queue;
 	}
 
-//	private static PriorityQueue<Board> getMixedQueue(PriorityQueue<Board> currentQueue) // для требоательных
+//	private static PriorityQueue<Board> getMixedQueue(PriorityQueue<Board> currentQueue) // Г¤Г«Гї ГІГ°ГҐГЎГ®Г ГІГҐГ«ГјГ­Г»Гµ
 //	{
 //
 //		List<Board> duplBoards = new ArrayList<>();
@@ -146,7 +146,7 @@ public class Algo {
 
 		}
 
-		// проверка коллизий по столбцам
+		// ГЇГ°Г®ГўГҐГ°ГЄГ  ГЄГ®Г«Г«ГЁГ§ГЁГ© ГЇГ® Г±ГІГ®Г«ГЎГ¶Г Г¬
 
 		for (int i = 0; i < board.countOfQueens; i++) {
 			int tempCell = board.values[i];
@@ -228,7 +228,7 @@ public class Algo {
 			}
 		}
 
-		// диагонали
+		// Г¤ГЁГ ГЈГ®Г­Г Г«ГЁ
 
 		return currentCollision;
 
@@ -237,11 +237,11 @@ public class Algo {
 	public static Board LDFS(Board board) {
 		states++;
 		if (board.isCorrect() == true) {
-			System.out.println("КОНЕЧНЫЙ РЕЗУЛЬТАТ");
+			System.out.println("ГЉГЋГЌГ…Г—ГЌГ›Г‰ ГђГ…Г‡Г“Г‹ГњГ’ГЂГ’");
 			System.out.println("---------------------------");
-			System.out.println("Итераций " + steps);
-			System.out.println("Безыхосдности " + noWay);
-			System.out.println("Состояний  " + states);
+			System.out.println("Г€ГІГҐГ°Г Г¶ГЁГ© " + steps);
+			System.out.println("ГЃГҐГ§Г»ГµГ®Г±Г¤Г­Г®Г±ГІГЁ " + noWay);
+			System.out.println("Г‘Г®Г±ГІГ®ГїГ­ГЁГ©  " + states);
 
 			return board;
 		} else {
