@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Board board = new Board();
-		System.out.println("Õ¿◊¿À‹Õ€… –≈«”À‹“¿“");
+		System.out.println("√ç√Ä√ó√Ä√ã√ú√ç√õ√â √ê√Ö√á√ì√ã√ú√í√Ä√í");
 		System.out.println("---------------------------");
 		board.printTable();
 
