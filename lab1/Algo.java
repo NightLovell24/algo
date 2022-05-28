@@ -21,8 +21,7 @@ public class Algo {
 			return null;
 		}
 
-//		System.out.println("LOOP");
-//		System.out.println("LOOP");
+
 		if (board.isCorrect() == true) {
 
 			System.out.println("ÊÎÍÅ×ÍÛÉ ÐÅÇÓËÜÒÀÒ");
@@ -37,10 +36,7 @@ public class Algo {
 
 		PriorityQueue<Board> queue = getChildrens(board);
 
-//		if (queue.size() == 0)
-//		{
-//			return null;
-//		}
+
 
 		for (Board boardy : queue) {
 
@@ -76,15 +72,11 @@ public class Algo {
 			steps++;
 			Board tempBoard = state.getCopy();
 			states++;
-//			if (tempBoard.isSafe(j)) {
+
 			tempBoard.add(j);
 			tempBoard.collision = F1(tempBoard);
 			tempList.add(tempBoard);
-//				System.out.println("TEST :" + tempBoard.collision);
-//				System.out.println("J" + " collision " + tempBoard.collision);
 
-//			queue.add(tempBoard);
-//			}
 
 		}
 		Collections.shuffle(tempList);
@@ -96,38 +88,7 @@ public class Algo {
 		return queue;
 	}
 
-//	private static PriorityQueue<Board> getMixedQueue(PriorityQueue<Board> currentQueue) // äëÿ òðåáîàòåëüíûõ
-//	{
-//
-//		List<Board> duplBoards = new ArrayList<>();
-//
-//		Board board1 = currentQueue.stream().findFirst().get();
-//		int key = board1.collision;
-//		duplBoards.add(board1);
-//		for (Board board2 : currentQueue) {
-//
-//			if (board1 == board2) {
-//				continue;
-//			}
-//			if (board2.collision == key) {
-//				duplBoards.add(board2);
-//			}
-//
-//		}
-//
-//		if (duplBoards.size() > 1) {
-//
-//			for (int i = 0; i < duplBoards.size(); i++)
-//			{
-//				currentQueue.poll();
-//			}
-//			
-//			
-//		}
-//
-//		return currentQueue;
-//
-//	}
+
 
 	public static int F1(Board board) {
 		int currentCollision = 0;
@@ -146,7 +107,7 @@ public class Algo {
 
 		}
 
-		// ïðîâåðêà êîëëèçèé ïî ñòîëáöàì
+		
 
 		for (int i = 0; i < board.countOfQueens; i++) {
 			int tempCell = board.values[i];
@@ -228,7 +189,7 @@ public class Algo {
 			}
 		}
 
-		// äèàãîíàëè
+		
 
 		return currentCollision;
 
